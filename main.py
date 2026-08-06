@@ -175,14 +175,14 @@ async def patients(
     if search:
 
         cursor.execute(
-            "SELECT * FROM Patient WHERE patient_name LIKE %s ORDER BY patient_id DESC",
+            "SELECT * FROM Patient WHERE patient_name LIKE %s ORDER BY patient_id",
             (f"%{search}%",)
         )
 
     else:
 
         cursor.execute(
-            "SELECT * FROM Patient ORDER BY patient_id DESC"
+            "SELECT * FROM Patient ORDER BY patient_id"
         )
 
     patients = cursor.fetchall()
