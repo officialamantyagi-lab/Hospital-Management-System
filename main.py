@@ -83,7 +83,7 @@ async def dashboard(request: Request):
     )
 
     # Total Patients
-    cursor.execute("SELECT COUNT(*) AS total FROM Patient")
+    cursor.execute("SELECT COUNT(*) AS total FROM Patient order by id ASC")
     patients = cursor.fetchone()["total"]
 
     # Total Doctors
