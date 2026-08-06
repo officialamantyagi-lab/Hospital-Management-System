@@ -1,13 +1,14 @@
 import pymysql
+import os
 
 connection = pymysql.connect(
-    host="mysql-307d0e1b-officialamantyagi-ddf6.i.aivencloud.com",
-    port=13155,
-    user="avnadmin",
-    password="",
-    database="HospitalDB",
+    host=os.environ.get("DB_HOST"),
+    port=int(os.environ.get("DB_PORT")),
+    user=os.environ.get("DB_USER"),
+    password=os.environ.get("DB_PASSWORD"),
+    database=os.environ.get("DB_NAME"),
     ssl={
-        "ca": r"C:\Users\neha tyagi\Downloads\ca.pem"
+        "ca": "ca.pem"
     }
 )
 
