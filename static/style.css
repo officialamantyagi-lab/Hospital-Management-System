@@ -111,9 +111,14 @@ select{
     padding:10px;
 }
 
-table{
-    display:block;
+.table-responsive{
+    width:100%;
     overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+}
+
+table{
+    min-width:800px;
     white-space:nowrap;
 }
 
