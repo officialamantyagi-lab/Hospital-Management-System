@@ -293,10 +293,15 @@ async def update_patient(
 @app.get("/doctor")
 async def doctor_page(request: Request):
 
+    cursor.execute("SELECT department_id, department_name FROM Department")
+    departments = cursor.fetchall()
+
     return templates.TemplateResponse(
-        request=request,
-        name="doctor.html",
-        context={}
+        "doctor.html",
+        {
+            "request": request,
+            "departments": departments
+        }
     )
 
 
