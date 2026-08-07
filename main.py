@@ -297,9 +297,9 @@ async def doctor_page(request: Request):
     departments = cursor.fetchall()
 
     return templates.TemplateResponse(
-        "doctor.html",
-        {
-            "request": request,
+        request=request,
+        name="doctor.html",
+        context={
             "departments": departments
         }
     )
