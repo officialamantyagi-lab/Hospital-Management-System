@@ -154,13 +154,16 @@ button{
 }
 
 }
-.dashboard-link{
-    text-decoration: none;
+.dashboard-link,
+.dashboard-link:link,
+.dashboard-link:visited{
+    text-decoration: none !important;
     color: inherit;
     display: block;
 }
 
-.dashboard-link:hover{
-    transform: scale(1.03);
-    transition: 0.3s;
+.dashboard-link:hover,
+.dashboard-link:active{
+    text-decoration: none !important;
+    color: inherit;
 }
