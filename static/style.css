@@ -154,3 +154,13 @@ button{
 }
 
 }
+.dashboard-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.dashboard-link:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
