@@ -167,3 +167,11 @@ button{
     text-decoration: none !important;
     color: inherit;
 }
+.dashboard-link,
+.dashboard-link:link,
+.dashboard-link:visited,
+.dashboard-link:hover,
+.dashboard-link:active {
+    text-decoration: none !important;
+    color: inherit !important;
+}
