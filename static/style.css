@@ -175,3 +175,14 @@ button{
     text-decoration: none !important;
     color: inherit !important;
 }
+P.sidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+.logout-link{
+    margin-top: auto;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
