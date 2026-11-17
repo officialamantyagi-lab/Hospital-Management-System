@@ -1,5 +1,4 @@
-create database HospitalDB;
-use HospitalDB;
+
 
 CREATE TABLE Department(
     department_id INT AUTO_INCREMENT PRIMARY KEY,
